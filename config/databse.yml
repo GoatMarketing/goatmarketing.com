@@ -1,0 +1,6 @@
+development:
+  adapter: postgresql
+  database: sinatra_app_development
+  username: <%= ENV['PG_USER'] %>
+  password: <%= ENV['PG_PASS'] %>
+  host: localhost
