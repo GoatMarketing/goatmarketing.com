@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>🐐 Goat Marketing</title>
+  <meta name="google-site-verification" content="tVsot2l9gjrcEaM-8j0oFeaj5AycYqo2giuhTtZZPtc" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Meta Data -->
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="copyright" content="">
+  <!-- OG Meta Data -->
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <!-- Twitter Meta Data -->
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+  <!-- Policies -->
+  <meta http-equiv="Referrer-Policy" content="no-referrer">
+  <!-- Fav Icon Stuff -->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500" rel="stylesheet">
+  <!-- Site CSS -->
+  <link href="/css/simple-grid.css" rel="stylesheet" type="text/css">
+  <link href="/css/site.css" rel="stylesheet" type="text/css">
+  <link href="/css/animations.css" rel="stylesheet" type="text/css">
+  <link href="/css/hero.css" rel="stylesheet" type="text/css">
+  <link href="/css/nav-bar.css" rel="stylesheet" type="text/css">
+  <!-- Mobile CSS -->
+  <link href="/css/mobile.css" rel="stylesheet" type="text/css">
+  <link href="/css/mobile-nav-bar.css" rel="stylesheet" type="text/css">
+  <!-- Angular JS -->
+  <script src="js/angular.js"></script>
+  <!-- JS -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/register.js"></script>
+  <script type="text/javascript" src="js/site.js"></script>
+  <script type="text/javascript" src="js/navbar.js"></script>
+  <script type="text/javascript" src="js/stats.js"></script>
+  <script type="text/javascript" src="js/url.min.js"></script>
+</head>
+  <body>
+    <% if @message != nil %>
+      <style media="screen">.navbar{margin-top: 45px;}.m-nav-container{margin-top: 72px;}</style>
+      <div class="banner-message"><a href="/alerts"><%= @message %></a></div>
+    <% end %>
+    <%= erb :'layouts/nav' %>
+    <%= yield %>
+    <!-- Google Analytics -->
+  </body>
+</html>

@@ -1,0 +1,55 @@
+/* HERO FONTS IPHONE */
+@media (max-width: 800px){
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+
+/* IPAD */
+@media (max-width: 1130px){
+
+}
+/* SMALL SCREENS */
+@media (max-width: 930px){
+  .hero-video-container {
+    top: 230px;
+    width: 252px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-top: 2px solid #efefef;
+    border-left: 2px solid #efefef;
+    border-right: 2px solid #efefef;
+  }
+  .hero-video-container video {
+    width: 232px;
+  }
+  .feature-screenshot {
+    width: 250px;
+  }
+}
+/* Custom */
+@media (max-width: 720px){
+  .hero-video-container, .hero-video-container video {
+    visibility: hidden;
+  }
+}
+/* IPHONE */
+@media (max-width: 375px){
+  .hero-video-container, .hero-video-container video {
+    visibility: hidden;
+  }
+}
+
+/* Make fonts thicker for larger screen sizes */
+@media (min-width: 2480px){
+  *, p {
+    font-weight: 400;
+  }
+}

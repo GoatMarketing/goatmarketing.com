@@ -1,0 +1,31 @@
+#hero {
+  height: 600px;
+  width: auto;
+  padding-top: 100px;
+}
+
+#hero .logo {
+  width: 300px;
+  height: 275px;
+  margin: 50px auto 0;
+}
+.hero-video-container {
+  position: absolute;
+  width: 432px;
+  top: 35px;
+  overflow: hidden;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  border-bottom: 1px solid #efefef;
+  border-top: 5px solid #efefef;
+  border-left: 5px solid #efefef;
+  border-right: 5px solid #efefef;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  -moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+.hero-video-container video {
+  width: 402px;
+}

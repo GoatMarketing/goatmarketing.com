@@ -1,0 +1,86 @@
+/* Navigation Bar */
+.navbar {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  padding: 15px;
+  transition: all 0.2s ease-in-out;
+  background-color: rgba(255,255,255,1);
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  -moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+.navbar .logo {
+  float: left;
+}
+.navbar .logo img {
+  height: 50px;
+  border-radius: 50%;
+}
+.navbar a {
+  line-height: 35px;
+  font-weight: 300;
+}
+.navbar a:hover {
+  color: var(--teal);
+}
+
+/* NAV BAR HIDE */
+.nav-down {
+  top: -200px;
+}
+
+/* NAVBAR TOP OF PAGE */
+.nav-start {
+  transition: all 0.2s ease-in-out;
+  background-color: rgba(255,255,255,0);
+  box-shadow: 1px 1px 4px rgba(0,0,0,0);
+  -moz-box-shadow: 1px 1px 4px rgba(0,0,0,0);
+  -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0);
+}
+.nav-start a {
+  color: white;
+}
+.nav-start a:hover {
+  border-bottom: 1px solid white;
+  color: white;
+}
+.nav-start .logo img {
+  /*border: 1px solid white;*/
+  border-radius: 50%;
+}
+.nav-logo-link:hover {
+  border-bottom: 1px solid transparent !important;
+  color: white;
+}
+.nav-logo-link img:hover {
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  -moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+.lang-icons {
+  padding-top: 10px;
+}
+.lang-icons a {
+  opacity: 0.85;
+}
+.lang-icons a:hover {
+  opacity: 1;
+  border-bottom: none;
+  text-decoration: none;
+}
+.notification {
+  display: inline-block;
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  font-size: 8px;
+  margin-left: 6px;
+  text-align: center;
+}

@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500');
+
+/* ROOT FONT STYLES */
+* {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+}
+/* Global Variables */
+:root {
+  --black: #14171a;
+  --gray: #2e2e2e;
+  --teal: #45C8FE;
+  --light-blue: #61adf9;
+  --blue: #48A0F8;
+  --dark-blue: #2F93F7;
+  --dark-purple: #8E6BFF;
+  --light-purple: #A367FF;
+}
+/* UNIVERSAL */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+}
+/* Standard Elements */
+h1 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 1.375rem;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+a {
+  color: var(--black);
+  font-weight: 300;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: var(--teal);
+}
+b {
+  font-weight: 500;
+}
+ol li {
+  font-weight: 300;
+  padding-left: 15px;
+  font-size: 1em;
+  line-height: 2em;
+}
+ol li a {
+  font-weight: 400;
+}
+p {
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.8;
+}
+#footer {
+  height: 50vh;
+}
+
+/* Color Style Classes */
+/* Background Color White */
+.bg-white {
+  background-color: rgba(255,255,255,1);
+}
+/* Font Color White */
+.f-white {
+  color: rgba(255,255,255,1) !important;
+}
+/* Font Color White */
+.f-dark {
+  color: var(--gray);
+}
+/* Apply Grayscale Filter */
+.gray-scale {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+/* BG Gradient */
+.gradient-bg {
+  background: var(--light-blue); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, var(--dark-blue), var(--light-blue)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, var(--dark-blue), var(--light-blue)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, var(--dark-blue), var(--light-blue)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, var(--dark-blue), var(--light-blue)); /* Standard syntax */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--dark-blue), endColorstr=var(--light-blue),GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+/* Content */
+.slide-in, .pop-in {
+  visibility: hidden;
+}
+.section {
+  width: 100%;
+  height: auto;
+  min-height: 250px;
+  padding: 60px 0 100px 0;
+  overflow: hidden;
+  color: var(--black);
+}
+.section.dark {
+  background-color: var(--black);
+}
+/* For add/even slanting to work, slanted must be listed as the last class */
+.slanted {
+  margin-top: -15px;
+  /*-webkit-clip-path: polygon(0 0, 100% 2%, 100% 96%, 0 100%);
+  clip-path:         polygon(0 0, 100% 2%, 100% 96%, 0 100%);*/
+}
+.slanted:nth-child(odd) {
+  -webkit-clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%);
+  clip-path:         polygon(0 4%, 100% 0, 100% 96%, 0 100%);
+}
+.slanted:nth-child(even) {
+  -webkit-clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 96%);
+  clip-path:         polygon(0 0, 100% 4%, 100% 100%, 0 96%);
+}
+
+/* Apply this class to body when Modal is open */
+.noscroll {
+  overflow: hidden;
+  position: fixed;
+}
+
+/* align icons of different heights in a row */
+.icon-align a {
+  line-height: 100px;
+  vertical-align:bottom;
+}
+/* FORMS */
+/* Input Text Field */
+form .text-box {
+  outline: none;
+  width: 300px;
+  font-weight: 200;
+  font-size: 1.5em;
+  color: var(--teal);
+  background-color: white;
+  /*border: 2px solid transparent !important;*/
+  transition: all 0.5s ease;
+}
+form .text-box:focus {
+  /*border-bottom: 2px solid white !important;*/
+  background-color: white;
+}
+/* Submit Buttons */
+form input[type="submit"] {
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  text-decoration: none !important;
+  transition: .1s all ease-in-out;
+  /* Disable Safari iOS form input defaults */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input[type="search"] {
+  padding: 15px;
+  background: white;
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 15px;
+  font-size: 1em;
+  width: 50%;
+  /* Disable Safari iOS form input defaults */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input[type="search"]:focus {
+  outline: none;
+  border: 1px solid cyan;
+}
+/* Banner Messages */
+.banner-message {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  padding: 15px;
+  opacity: 0.95;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+}
+.banner-message.error, .response.error {
+  color: red;
+}
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1em;
+  font-weight: 300;
+  background-color: var(--teal);
+  color: white;
+  border: 2px solid transparent;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  text-decoration: none !important;
+  transition: .1s all ease-in-out;
+}
+.btn:hover {
+  color: white;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  -moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+.btn.white {
+  border: 2px solid rgba(255,255,255,1);
+  background-color: rgba(255,255,255,1) !important;
+  color: var(--black);
+}
+.btn.holo {
+  background-color: transparent;
+  border: 2px solid white !important;
+  color: white;
+}
+.btn.holo:hover {
+  background-color: white;
+  color: var(--black);
+}
+/* Icons in Buttons */
+.btn-icon {
+  height: 24px;
+  margin-bottom: -6px;
+  padding-right: 10px;
+}
+.feature-screenshot {
+  width: 350px;
+}
+.legal {
+  width: 100%;
+  text-align: center;
+  margin-top: -20px;
+  font-size: 12px;
+  color: white;
+}
