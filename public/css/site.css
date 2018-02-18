@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500');
 
 /* ROOT FONT STYLES */
 * {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   font-weight: 300;
 }
@@ -10,12 +10,9 @@
 :root {
   --black: #14171a;
   --gray: #2e2e2e;
-  --teal: #45C8FE;
-  --light-blue: #61adf9;
-  --blue: #48A0F8;
-  --dark-blue: #2F93F7;
-  --dark-purple: #8E6BFF;
-  --light-purple: #A367FF;
+  --light-blue: #00B9EB;
+  --blue: #00A7D4;
+  --dark-blue: #009BC5;
 }
 /* UNIVERSAL */
 html,

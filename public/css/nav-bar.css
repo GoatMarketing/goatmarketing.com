@@ -56,9 +56,9 @@
   color: white;
 }
 .nav-logo-link img:hover {
-  box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  /* box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
   -moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-  -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.5); */
 }
 .lang-icons {
   padding-top: 10px;
