@@ -45,8 +45,12 @@ $( document ).ready(function() {
     // When at the top of the page
     if (st <= 0) {
       $('.navbar').addClass('nav-start');
+      // Change nav logo image src
+      $('.navbar img').attr("src", "/images/goat-marketing-nav-logo-white.png");
     } else {
       $('.navbar').removeClass('nav-start');
+      // Change nav logo image src
+      $('.navbar img').attr("src", "/images/goat-marketing-nav-logo-blue.png");
     }
 
     lastScrollTop = st;
