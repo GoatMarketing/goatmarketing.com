@@ -3,6 +3,10 @@ class ApplicationController < Sinatra::Base
   set :session_secret, "password_security"
   register Sinatra::MultiRoute
 
+  use Rack::Auth::Basic do |username, password|
+    password == 'goat2k18'
+  end
+
   # Error Handling
   set :show_exceptions, false
 
