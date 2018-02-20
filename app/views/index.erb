@@ -1,57 +1,81 @@
 <style media="screen">
+.hero-text {
+  z-index: 3;
+  top: 15%;
+}
 #hero-video {
-    position: fixed;
+    position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: -310px;
     min-width: 100%;
     min-height: 100%;
     z-index: 1;
 }
 .video-container {
-    position: fixed;
+    position: absolute;
     width: 100%;
-    height: 100%;
+    height: 50%;
     padding: 20px;
     border-radius: 5px;
     background-attachment: scroll;
     overflow: hidden;
 }
 .video-container .overlay {
+    position: absolute;
     height: 100%;
     width: 100%;
-    position: fixed;
     top: 0px;
     left: 0px;
     z-index: 2;
     background: var(--blue);
     opacity: 0.5;
 }
+.barrier {
+  height: 50%;
+}
 </style>
 
 <div class="video-container">
+  <div class="row center f-white hero-text">
+    <h1>Connecting Brands<br /> to Influencers</h1>
+  </div>
   <div class="overlay"></div>
   <video id='hero-video' src="/videos/goat-marketing-hero-video.mp4" autoplay loop poster="posterimage.jpg"></video>
 </div>
 
+<div class="barrier"></div>
+
 <div class="section">
-  <div class="container f-white">
-    <div class="row">
-      <h1>GOAT <b>Marketing</b></h1>
+  <div class="container">
+    <div class="row center">
+      <div class="col-3">
+        <h2>Stat</h2>
+      </div>
+      <div class="col-3">
+        <h2>Stat</h2>
+      </div>
+      <div class="col-3">
+        <h2>Stat</h2>
+      </div>
+      <div class="col-3">
+        <h2>Stat</h2>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="section">
+<div class="section dark">
   <div class="container f-white">
-    <div class="row">
-      <div class="col-6">
-        <h2>TEST</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      </div>
-      <div class="col-6">
-        <h3>Font Awesome</h3>
-        <p>Lorem Ipsum is <b>simply</b> dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      </div>
+    <div class="row left">
+      <h1>FOR BRANDS</h1>
+    </div>
+  </div>
+</div>
+
+<div class="section gradient-bg">
+  <div class="container f-white">
+    <div class="row right">
+      <h1>FOR INFLUENCERS</h1>
     </div>
   </div>
 </div>
