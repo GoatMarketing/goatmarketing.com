@@ -216,11 +216,11 @@ input[type="search"]:focus {
   padding: 15px 30px;
   font-size: 1em;
   font-weight: 300;
-  background-color: var(--teal);
+  background-color: var(--blue);
   color: white;
   border: 2px solid transparent;
   letter-spacing: 1px;
-  border-radius: 15px;
+  border-radius: 5px;
   cursor: pointer;
   user-select: none;
   white-space: nowrap;
