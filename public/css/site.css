@@ -218,6 +218,7 @@ input[type="search"]:focus {
   font-weight: 300;
   background-color: var(--blue);
   color: white;
+  min-width: 225px;
   border: 2px solid transparent;
   letter-spacing: 1px;
   border-radius: 5px;
