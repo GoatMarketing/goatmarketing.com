@@ -1,0 +1,191 @@
+<style media="screen">
+@-moz-keyframes fill {
+  0% {
+    height: 0%;
+  }
+  60% {
+    height: 110%;
+  }
+  70% {
+    height: 95%;
+  }
+  80% {
+    height: 105%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@-webkit-keyframes fill {
+  0% {
+    height: 0%;
+  }
+  60% {
+    height: 110%;
+  }
+  70% {
+    height: 95%;
+  }
+  80% {
+    height: 105%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes fill {
+  0% {
+    height: 0%;
+  }
+  60% {
+    height: 110%;
+  }
+  70% {
+    height: 95%;
+  }
+  80% {
+    height: 105%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+.box {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  display: inline-block;
+}
+.box .container {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  padding-top: 50px;
+}
+.box .fill {
+  z-index: 2;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.box .fill.speed1 {
+  -moz-animation: fill 1s ease-out;
+  -webkit-animation: fill 1s ease-out;
+  animation: fill 1s ease-out;
+}
+.box .fill.speed2 {
+  -moz-animation: fill 1.1s ease-out;
+  -webkit-animation: fill 1.1s ease-out;
+  animation: fill 1.1s ease-out;
+}
+.box .fill.speed3 {
+  -moz-animation: fill 1.2s ease-out;
+  -webkit-animation: fill 1.2s ease-out;
+  animation: fill 1.2s ease-out;
+}
+.box .fill.speed4 {
+  -moz-animation: fill 1.3s ease-out;
+  -webkit-animation: fill 1.3s ease-out;
+  animation: fill 1.3s ease-out;
+}
+.number-text {
+  font-size: 16px;
+}
+
+</style>
+
+<div class="section">
+  <div class="container">
+    <div class="row center">
+
+      <div class="col-3">
+        <div class="box">
+          <div class="container">
+            <img class="box-icon " src="/images/goat-marketing-global-reach.svg" alt="" height="50px;">
+            <h3 class="">GLOBAL REACH</h3>
+          </div>
+          <div class="fill speed1" style="background : var(--blue); "></div>
+        </div>
+        <div class="box-title">
+          <h2><span class="number">700</span>+ Million</h2>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="box">
+          <div class="container">
+            <img class="box-icon " src="/images/goat-marketing-eyeballs.svg" alt="" height="50px;">
+            <h3 class="">EYE BALLS</h3>
+          </div>
+          <div class="fill speed2" style="background : var(--blue);"></div>
+        </div>
+        <div class="box-title">
+          <h2><span class="number">2</span>+ Billion</h2>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="box">
+          <div class="container">
+            <img class="box-icon " src="/images/goat-marketing-brand-dollars.svg" alt="" height="50px;">
+            <h3 class="">BRAND DOLLARS</h3>
+          </div>
+          <div class="fill speed3" style="background : var(--blue);"></div>
+        </div>
+        <div class="box-title">
+          <h2>$<span class="number">25</span>+ Million</h2>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="box">
+          <div class="container">
+            <img class="box-icon " src="/images/goat-marketing-happy-customers.svg" alt="" height="50px;">
+            <h3 class="">CUSTOMERS</h3>
+          </div>
+          <div class="fill speed4" style="background : var(--blue);"></div>
+        </div>
+        <div class="box-title">
+          <h2><span class="number">174</span></h2>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+  function increment(){
+    $('.box').hide();
+    setTimeout(function(){
+      $('.box').show();
+    },100);
+
+    $('.number').each(function(){
+      var $this = $(this),
+          value = $this.text();
+      $({someValue: 0}).animate({someValue: value}, {
+        duration: 1200,
+        easing:'swing',
+        step: function() {
+          $this.text(Math.round(this.someValue));
+        },
+        complete: function() {
+          $this.text(value);
+        }
+      });
+    });
+  }
+  increment();
+</script>

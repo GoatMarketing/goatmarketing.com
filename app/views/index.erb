@@ -33,13 +33,6 @@
 .barrier {
   height: 100%;
 }
-.card {
-  padding: 15px;
-  min-height: 325px;
-  border: 1px solid gray;
-  border-radius: 15px;
-  transition: .1s all ease-in-out;
-}
 </style>
 
 <div class="video-container slanted">
@@ -57,82 +50,11 @@
     <div class="col-3"></div>
   </div>
   <div class="overlay"></div>
-  <video id='hero-video' src="/videos/goat-marketing-hero-video.mp4" autoplay loop poster="posterimage.jpg"></video>
+  <video id='hero-video' src="/videos/goat-marketing-hero-video.mp4" autoplay loop></video>
 </div>
 
 <div class="barrier"></div>
 
-<div class="section slanted">
-  <div class="container">
-    <div class="row center slide-in">
-      <div class="col-3">
-        <div class="card">
-          <div class="card-stat">
-            <h2 class="pop-in">700+ Million</h2>
-          </div>
-          <div class="card-icon">
-            <img class="pop-in" src="/images/goat-marketing-global-reach.png" alt="" height="50px;">
-          </div>
-          <div class="card-title">
-            <h3 class="pop-in">GLOBAL REACH</h3>
-          </div>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="card">
-          <div class="card-stat">
-            <h2 class="pop-in">2 Billion +</h2>
-          </div>
-          <div class="card-icon">
-            <img class="pop-in" src="/images/goat-marketing-eyeballs.png" alt="" height="50px;">
-          </div>
-          <div class="card-title">
-            <h3 class="pop-in">EYE BALLS</h3>
-          </div>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="card">
-          <div class="card-stat">
-            <h2 class="pop-in">$25,345,125</h2>
-          </div>
-          <div class="card-icon">
-            <img class="pop-in" src="/images/goat-marketing-brand-dollars.png" alt="" height="50px;">
-          </div>
-          <div class="card-title">
-            <h3 class="pop-in">BRAND DOLLARS</h3>
-          </div>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="card">
-          <div class="card-stat">
-            <h2 class="pop-in">174</h2>
-          </div>
-          <div class="card-icon">
-            <img class="pop-in" src="/images/goat-marketing-happy-customers.png" alt="" height="50px;">
-          </div>
-          <div class="card-title">
-            <h3 class="pop-in">HAPPY CUSTOMERS</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="section dark slanted">
-  <div class="container f-white">
-    <div class="row left">
-      <h1>FOR BRANDS</h1>
-    </div>
-  </div>
-</div>
-
-<div class="section gradient-bg slanted">
-  <div class="container f-white">
-    <div class="row right">
-      <h1>FOR INFLUENCERS</h1>
-    </div>
-  </div>
-</div>
+<%= erb :'layouts/stats' %>
+<%#= erb :'layouts/brands' %>
+<%#= erb :'layouts/influencers' %>
