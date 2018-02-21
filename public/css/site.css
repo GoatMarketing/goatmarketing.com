@@ -229,10 +229,14 @@ input[type="search"]:focus {
   transition: .1s all ease-in-out;
 }
 .btn:hover {
+  transform: scale(1.1);
   color: white;
   box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
   -moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
   -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+.btn:active {
+  transform: scale(1);
 }
 .btn.white {
   border: 2px solid rgba(255,255,255,1);
