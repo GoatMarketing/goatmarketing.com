@@ -126,6 +126,41 @@ p {
   margin-top: -70px;
 }
 
+.hero-text {
+  z-index: 3;
+  top: 15%;
+}
+#hero-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+}
+.video-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 0px;
+    background-attachment: scroll;
+    overflow: hidden;
+}
+.video-container .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    background: var(--blue);
+    opacity: 0.5;
+}
+.barrier {
+  height: 100%;
+}
+
 /* Content */
 .slide-in, .pop-in {
   visibility: hidden;
