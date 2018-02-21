@@ -13,7 +13,7 @@ $( document ).ready(function() {
     mobileNavBar.hide();
   }
 
-  // Element Animations
+  // Element Animations - Detect if in viewport
   (function($, win) {
     $.fn.inViewport = function(cb) {
        return this.each(function(i,el){
@@ -27,25 +27,12 @@ $( document ).ready(function() {
     };
   }(jQuery, window));
 
+  // Play Animation when in view
   $(".pop-in").inViewport(function(px){
       if(px) $(this).addClass("animation-pop-in");
   });
   $(".slide-in").inViewport(function(px){
       if(px) $(this).addClass("animation-slide-in");
   });
-
-  // Current BTC/USD Price
-  function setBtcRate(){
-    $.get( "https://api.cryptonator.com/api/ticker/btc-usd", function( data ) {
-      if (data.success) {
-        $('.result').html('$ ' + parseFloat(data.ticker.price).toFixed(2));
-      }
-    });
-  }
-
-  setInterval(function(){
-    setBtcRate()
-  }, 60000)
-  setBtcRate()
 
 });
