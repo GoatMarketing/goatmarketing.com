@@ -122,8 +122,7 @@ p {
 .watermark-white img {
   height: 500px;
   opacity: 0.5;
-  padding-right: 75px;
-  margin-top: -70px;
+  padding-right: 125px;
 }
 
 .hero-text {
