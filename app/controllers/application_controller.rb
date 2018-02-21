@@ -19,4 +19,25 @@ class ApplicationController < Sinatra::Base
   get '/' do
     erb :index, {locals: {message: @message}}
   end
+
+  get '/about' do
+    erb :about, {locals: {message: @message}}
+  end
+
+  get '/services' do
+    erb :services, {locals: {message: @message}}
+  end
+
+  get '/brands' do
+    erb :brands, {locals: {message: @message}}
+  end
+
+  get '/creators' do
+    erb :creators, {locals: {message: @message}}
+  end
+
+  get '/contact' do
+    erb :contact, {locals: {message: @message}}
+  end
+
 end
