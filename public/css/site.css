@@ -113,6 +113,19 @@ p {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--dark-blue), endColorstr=var(--light-blue),GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+.watermark-white {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  height: 100%;
+}
+.watermark-white img {
+  height: 500px;
+  opacity: 0.5;
+  padding-right: 75px;
+  margin-top: -70px;
+}
+
 /* Content */
 .slide-in, .pop-in {
   visibility: hidden;
