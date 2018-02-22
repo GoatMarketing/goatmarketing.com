@@ -12,6 +12,7 @@
   --light-blue: #00B9EB;
   --blue: #00A7D4;
   --dark-blue: #009BC5;
+  --very-dark-blue: #0B546A;
   --purple: #5C0CE8;
   --red: #FF0000;
   --orange: #E8940C;
@@ -185,7 +186,7 @@ p {
   color: var(--black);
 }
 .section.dark {
-  background-color: var(--black);
+  background-color: var(--very-dark-blue);
 }
 /* For add/even slanting to work, slanted must be listed as the last class */
 .slanted {
