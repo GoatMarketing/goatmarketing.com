@@ -142,6 +142,7 @@ p {
     position: absolute;
     width: 100%;
     height: 75vh;
+    min-height: 500px;
     padding: 20px;
     border-radius: 0px;
     background-attachment: scroll;
@@ -159,6 +160,7 @@ p {
 }
 .barrier {
   height: 75vh;
+  min-height: 500px;
 }
 
 /* Special Items */
