@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,500');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
 
 /* ROOT FONT STYLES */
 * {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.5;
-  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
 }
 /* Global Variables */
 :root {
@@ -31,17 +30,18 @@ body {
 /* Standard Elements */
 h1 {
   font-size: 4rem;
-  font-weight: 300;
+  font-weight: bold;
+  font-family: 'Raleway',sans-serif;
 }
 
 h2 {
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h3 {
   font-size: 1.375rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h4 {
@@ -57,7 +57,7 @@ h6 {
 }
 a {
   color: var(--black);
-  font-weight: 300;
+  font-weight: 400;
   text-decoration: none;
 }
 a:hover {
@@ -140,7 +140,7 @@ p {
 .video-container {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 50%;
     padding: 20px;
     border-radius: 0px;
     background-attachment: scroll;
@@ -157,7 +157,7 @@ p {
     opacity: 0.5;
 }
 .barrier {
-  height: 100%;
+  height: 50%;
 }
 
 /* Special Items */
