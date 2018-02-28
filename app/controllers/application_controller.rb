@@ -28,9 +28,9 @@ class ApplicationController < Sinatra::Base
     erb :services, {locals: {message: @message}}
   end
 
-  get '/brands' do
-    erb :brands, {locals: {message: @message}}
-  end
+  # get '/brands' do
+  #   erb :brands, {locals: {message: @message}}
+  # end
 
   get '/creators' do
     erb :creators, {locals: {message: @message}}
