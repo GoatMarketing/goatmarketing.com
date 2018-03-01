@@ -32,9 +32,9 @@ class ApplicationController < Sinatra::Base
   #   erb :brands, {locals: {message: @message}}
   # end
 
-  get '/creators' do
-    erb :creators, {locals: {message: @message}}
-  end
+  # get '/creators' do
+  #   erb :creators, {locals: {message: @message}}
+  # end
 
   get '/contact' do
     erb :contact, {locals: {message: @message}}
