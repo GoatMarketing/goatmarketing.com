@@ -11,6 +11,35 @@
   .barrier {
     height: 400px;
   }
+  .slanted.blue {
+    position: absolute;
+    background-color: var(--blue);
+    width: 260px;
+    height: 250px;
+  }
+  .image-container {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+    -moz-box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+  }
+  .image-container img {
+    width: 100%;
+  }
+  .spaced-rows .row {
+    padding: 30px 0 30px 0;
+  }
+  .dash {
+    height: 15px;
+    width: 45px;
+    background-color: var(--blue);
+  }
+  .dash-title {
+    margin-top: 20px;
+    line-height: 0.85em;
+  }
 </style>
 
 <div class="video-container">
@@ -27,44 +56,56 @@
 <div class="barrier"></div>
 
 <div class="section">
-  <div class="container">
+  <div class="container spaced-rows">
     <div class="row">
       <div class="col-6 slide-in">
-        <img class="pop-in" src="/images/goat-marketing-sponsored-content.jpg" alt="" height="250px">
+        <div class="image-container slide-in">
+          <img src="/images/goat-marketing-sponsored-content.jpg" alt="">
+        </div>
       </div>
       <div class="col-6 slide-in">
-        <h3>Sponsored Content</h3>
+        <div class="dash"></div>
+        <h1 class="dash-title">SPONSORED CONTENT</h1>
         <p>We are experts in connecting creators to brands they use and like. We develop custom campaigns that focus on strategy and tactics to deliver high measurable results for our brand partners.</p>
       </div>
     </div>
 
     <div class="row">
       <div class="col-6 slide-in">
-        <h3>Custom Research</h3>
+        <div class="dash"></div>
+        <h1 class="dash-title">CUSTOM RESEARCH</h1>
         <p>Unique research which is tailored and optimized for our customers' specific needs. To better understand trends and what is functional.</p>
       </div>
       <div class="col-6 slide-in">
-        <img class="pop-in" src="/images/goat-marketing-custom-research.jpeg" alt="" height="250px">
+        <div class="image-container slide-in">
+          <img src="/images/goat-marketing-custom-research.jpg" alt="">
+        </div>
       </div>
     </div>
 
     <div class="row">
       <div class="col-6 slide-in">
-        <img class="pop-in" src="/images/goat-marketing-dedicated-agent.jpeg" alt="" height="250px">
+        <div class="image-container slide-in">
+          <img src="/images/goat-marketing-dedicated-agent.jpg" alt="">
+        </div>
       </div>
       <div class="col-6 slide-in">
-        <h3>Dedicated Agent Support</h3>
+        <div class="dash"></div>
+        <h1 class="dash-title">DEDICATED AGENT SUPPORT</h1>
         <p>Dedicated customer service that provides you distinguished support. Together, we'll choose skilled agents who will guide you through this journey with your core branding values.</p>
       </div>
     </div>
 
     <div class="row">
       <div class="col-6 slide-in">
-        <h3>Channel Management</h3>
+        <div class="dash"></div>
+        <h1 class="dash-title">CHANNEL MANAGEMENT</h1>
         <p>Goat Marketing has a nerd of social media and marketing experts with a complete suite of tools that work automatically and effectively to get you ahead of the pack.</p>
-      </div>
+        </div>
       <div class="col-6">
-        <img class="pop-in" src="/images/goat-marketing-channel-management.jpeg" alt="" height="250px">
+        <div class="image-container slide-in">
+          <img src="/images/goat-marketing-channel-management.jpg" alt="">
+        </div>
       </div>
     </div>
 
