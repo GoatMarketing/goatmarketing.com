@@ -1,4 +1,5 @@
  <style media="screen">
+   /* STYLE COLLAGE */
    .barrier {
      height: auto;
    }
@@ -11,6 +12,7 @@
      display: inline-block;
      float: left;
    }
+   /* FIGURE IMAGE WIDTH */
    .collage-image img {
      width: calc(90vw / 4);
    }
@@ -35,34 +37,127 @@
      }
    }
 
+   /* IMAGE HOVER EFFECT */
+   .collage-image {
+     position: relative;
+     margin: auto;
+     overflow: hidden;
+   }
+   .collage-image .content-overlay {
+     background: rgba(0,0,0,0.7);
+     position: absolute;
+     height: 99%;
+     width: 100%;
+     left: 0;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     opacity: 0;
+     -webkit-transition: all 0.4s ease-in-out 0s;
+     -moz-transition: all 0.4s ease-in-out 0s;
+     transition: all 0.4s ease-in-out 0s;
+   }
+   .collage-image:hover .content-overlay{
+     opacity: 1;
+   }
+   .content-image{
+     width: 100%;
+   }
+   .content-details {
+     position: absolute;
+     text-align: center;
+     padding-left: 1em;
+     padding-right: 1em;
+     width: 100%;
+     top: 50%;
+     left: 50%;
+     opacity: 0;
+     -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);
+     -webkit-transition: all 0.3s ease-in-out 0s;
+     -moz-transition: all 0.3s ease-in-out 0s;
+     transition: all 0.3s ease-in-out 0s;
+   }
+   .collage-image:hover .content-details{
+     top: 50%;
+     left: 50%;
+     opacity: 1;
+   }
+   .content-details h3{
+     color: #fff;
+     font-weight: 500;
+     letter-spacing: 0.15em;
+     margin-bottom: 0.5em;
+     text-transform: uppercase;
+   }
+   .content-details p{
+     color: #fff;
+     font-size: 0.8em;
+   }
+   .fadeIn-bottom{
+     top: 80%;
+   }
  </style>
 
 <div class="collage-row slide-in">
   <div class="collage-image">
-    <img src="/images/goat-marketing-chris-distefano.jpg" alt="">
+    <div class="content-overlay"></div>
+    <img class="content-image" src="/images/goat-marketing-chris-distefano.jpg" alt="">
+    <div class="content-details fadeIn-bottom">
+      <h3 class="content-title">Chris DiStefano</h3>
+    </div>
   </div>
   <div class="collage-image">
-    <img src="/images/goat-marketing-affaf-buslach.jpg" alt="">
+    <div class="content-overlay"></div>
+    <img class="content-image" src="/images/goat-marketing-affaf-buslach.jpg" alt="">
+    <div class="content-details fadeIn-bottom">
+      <h3 class="content-title">Affaf Buslach</h3>
+    </div>
   </div>
   <div class="collage-image">
-    <img src="/images/goat-marketing-joey-salads.jpg" alt="">
+    <div class="content-overlay"></div>
+    <img class="content-image" src="/images/goat-marketing-joey-salads.jpg" alt="">
+    <div class="content-details fadeIn-bottom">
+      <h3 class="content-title">Joey Salads</h3>
+    </div>
   </div>
   <div class="collage-image">
-    <img src="/images/goat-marketing-big-nik.jpg" alt="">
+    <div class="content-overlay"></div>
+    <img class="content-image" src="/images/goat-marketing-big-nik.jpg" alt="">
+    <div class="content-details fadeIn-bottom">
+      <h3 class="content-title">Big Nik</h3>
+    </div>
   </div>
 </div>
 
 <div class="collage-row slide-in">
   <div class="collage-image">
-    <img src="/images/goat-marketing-codee-yount.jpg" alt="">
+    <div class="content-overlay"></div>
+    <img class="content-image" src="/images/goat-marketing-codee-yount.jpg" alt="">
+    <div class="content-details fadeIn-bottom">
+      <h3 class="content-title">Codee Yount</h3>
+    </div>
   </div>
   <div class="collage-image">
-    <img src="/images/goat-marketing-mikey-manfs.jpg" alt="">
+    <div class="content-overlay"></div>
+    <img class="content-image" src="/images/goat-marketing-mikey-manfs.jpg" alt="">
+    <div class="content-details fadeIn-bottom">
+      <h3 class="content-title">Mikey Manfs</h3>
+    </div>
   </div>
   <div class="collage-image">
-    <img src="/images/goat-marketing-sam-jones-III.jpg" alt="">
+    <div class="content-overlay"></div>
+    <img class="content-image" src="/images/goat-marketing-sam-jones-III.jpg" alt="">
+    <div class="content-details fadeIn-bottom">
+      <h3 class="content-title">Sam Jones III</h3>
+    </div>
   </div>
   <div class="collage-image">
-    <img src="/images/goat-marketing-denzel-dion.jpg" alt="">
+    <div class="content-overlay"></div>
+    <img class="content-image" src="/images/goat-marketing-denzel-dion.jpg" alt="">
+    <div class="content-details fadeIn-bottom">
+      <h3 class="content-title">Denzel Dion</h3>
+    </div>
   </div>
 </div>
