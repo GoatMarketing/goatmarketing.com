@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="75px" height="73px" viewBox="0 0 75 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>goat-marketing-research-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Services" transform="translate(-1006.000000, -297.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="goat-marketing-research-icon" transform="translate(1006.000000, 297.000000)">
+                <path d="M54.7894737,52.0263158 L55.1842105,51.6315789 C60.0789474,45.9473684 62.7631579,38.7631579 62.7631579,31.2631579 C62.7631579,14.0526316 48.7894737,0.0789473684 31.5789474,0.0789473684 C14.3684211,0.0789473684 0.394736842,14.0526316 0.394736842,31.1842105 C0.394736842,48.3157895 14.3684211,62.3684211 31.5789474,62.3684211 C38.6052632,62.3684211 45.2368421,60.0789474 50.7631579,55.7368421 L51.0789474,55.5 L71.6052632,72.0789474 L74.7631579,68.1315789 L54.7894737,52.0263158 Z M31.5789474,57.3157895 C17.2105263,57.3157895 5.44736842,45.6315789 5.44736842,31.1842105 C5.44736842,16.8157895 17.1315789,5.05263158 31.5789474,5.05263158 C45.9473684,5.05263158 57.7105263,16.7368421 57.7105263,31.1842105 C57.7105263,45.6315789 45.9473684,57.3157895 31.5789474,57.3157895 Z" id="Shape"></path>
+                <rect id="Rectangle-path" x="14.9210526" y="30" width="5.05263158" height="11.7631579"></rect>
+                <rect id="Rectangle-path" x="24.1578947" y="22.0263158" width="5.05263158" height="19.6578947"></rect>
+                <rect id="Rectangle-path" x="33.1578947" y="25.8947368" width="5.05263158" height="15.8684211"></rect>
+                <rect id="Rectangle-path" x="42.3947368" y="34.3421053" width="5.05263158" height="7.34210526"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
