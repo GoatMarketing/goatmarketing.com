@@ -25,7 +25,8 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/services' do
-    erb :services, {locals: {message: @message}}
+    redirect('/#services')
+    # erb :services, {locals: {message: @message}}
   end
 
   get '/brands' do
