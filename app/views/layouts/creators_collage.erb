@@ -3,19 +3,41 @@
      height: auto;
    }
    .collage-row {
-     width: 100vw;
+     width: 100%;
+     float: left;
+     margin-top: -5px;
    }
    .collage-image {
      display: inline-block;
      float: left;
-     height: 24vw;
    }
    .collage-image img {
-     width: 25vw;
+     width: calc(90vw / 4);
    }
+   @media only screen and (min-width: 33.75em) {  /* 540px */
+     .collage-image img {
+       width: calc(80vw / 4);
+     }
+   }
+   @media only screen and (min-width: 60em) { /* 960px */
+     .collage-image img {
+       width: calc(75vw / 4);
+     }
+   }
+   @media only screen and (min-width: 1280px) { /* 1280px */
+     .collage-image img {
+       width: calc(70vw / 4);
+     }
+   }
+   @media only screen and (min-width: 1370px) { /* 1370px */
+     .collage-image img {
+       width: calc(50vw / 4);
+     }
+   }
+
  </style>
 
-<div class="collage-row">
+<div class="collage-row slide-in">
   <div class="collage-image">
     <img src="/images/goat-marketing-chris-distefano.jpg" alt="">
   </div>
@@ -30,17 +52,17 @@
   </div>
 </div>
 
-<div class="collage-row">
+<div class="collage-row slide-in">
   <div class="collage-image">
-    <img src="/images/goat-marketing-chris-distefano.jpg" alt="">
+    <img src="/images/goat-marketing-codee-yount.jpg" alt="">
   </div>
   <div class="collage-image">
-    <img src="/images/goat-marketing-affaf-buslach.jpg" alt="">
+    <img src="/images/goat-marketing-mikey-manfs.jpg" alt="">
   </div>
   <div class="collage-image">
-    <img src="/images/goat-marketing-joey-salads.jpg" alt="">
+    <img src="/images/goat-marketing-sam-jones-III.jpg" alt="">
   </div>
   <div class="collage-image">
-    <img src="/images/goat-marketing-big-nik.jpg" alt="">
+    <img src="/images/goat-marketing-denzel-dion.jpg" alt="">
   </div>
 </div>
