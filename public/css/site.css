@@ -163,6 +163,16 @@ p {
   min-height: 500px;
 }
 
+.dash {
+  height: 15px;
+  width: 45px;
+  background-color: var(--blue);
+}
+.dash-title {
+  margin-top: 20px;
+  line-height: 0.85em;
+}
+
 /* Special Items */
 .profile-pic img {
   width: 100%;
@@ -184,6 +194,9 @@ p {
 }
 .section.dark {
   background-color: var(--very-dark-blue);
+}
+.section.black {
+  background-color: var(--black);
 }
 /* For add/even slanting to work, slanted must be listed as the last class */
 .slanted {
@@ -326,5 +339,5 @@ input[type="search"]:focus {
   text-align: center;
   margin-top: -20px;
   font-size: 12px;
-  color: white;
+  color: gray;
 }

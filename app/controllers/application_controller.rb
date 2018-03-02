@@ -28,13 +28,15 @@ class ApplicationController < Sinatra::Base
     erb :services, {locals: {message: @message}}
   end
 
-  # get '/brands' do
-  #   erb :brands, {locals: {message: @message}}
-  # end
+  get '/brands' do
+    redirect('/#brands')
+    # erb :brands, {locals: {message: @message}}
+  end
 
-  # get '/creators' do
-  #   erb :creators, {locals: {message: @message}}
-  # end
+  get '/creators' do
+    redirect('/#creators')
+    # erb :creators, {locals: {message: @message}}
+  end
 
   get '/contact' do
     erb :contact, {locals: {message: @message}}
