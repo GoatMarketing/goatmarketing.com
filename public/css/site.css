@@ -168,6 +168,9 @@ p {
   width: 45px;
   background-color: var(--blue);
 }
+.dash.white {
+  background-color: white;
+}
 .dash-title {
   margin-top: 20px;
   line-height: 0.85em;

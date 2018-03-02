@@ -34,8 +34,8 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/creators' do
-    redirect('/#creators')
-    # erb :creators, {locals: {message: @message}}
+    # redirect('/#creators')
+    erb :creators, {locals: {message: @message}}
   end
 
   get '/contact' do

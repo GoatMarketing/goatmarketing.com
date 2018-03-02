@@ -5,29 +5,6 @@
   .overlay {
     height: 400px;
   }
-  .barrier {
-    height: 400px;
-  }
-  .buffer {
-    margin-top: 80px;
-  }
-  .col-6 {
-    border-bottom: 1px solid gray;
-    padding: 15px;
-  }
-  .profile-pic {
-    display: inline-block;
-    width: 25%;
-    height: auto;
-    overflow: hidden;
-    border-radius: 0px !important;
-  }
-  .profile-pic img {
-    width: 300px;
-    height: auto;
-    margin: 0 auto;
-  	display: block;
-  }
 </style>
 
 <div class="video-container">
@@ -42,33 +19,7 @@
 </div>
 
 <div class="barrier"></div>
-
-<style media="screen">
-  .temp {
-    display: inline-block;
-    overflow: hidden;
-    width: 24vw;
-  }
-  .temp img {
-    width: 25vw;
-    height: 25vw;
-  }
-</style>
-
-<div class="section">
-  <div class="temp">
-    <img src="/images/goat-marketing-chris-distefano.jpg" alt="">
-  </div>
-  <div class="temp">
-    <img src="/images/goat-marketing-affaf-buslach.jpg" alt="">
-  </div>
-  <div class="temp">
-    <img src="/images/goat-marketing-joey-salads.jpg" alt="">
-  </div>
-  <div class="temp">
-    <img src="/images/goat-marketing-big-nik.jpg" alt="">
-  </div>
-</div>
+<%= erb :'layouts/creators_collage' %>
 
 <div class="section gradient-bg">
   <div class="container f-white slide-in">
