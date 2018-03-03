@@ -21,7 +21,8 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/about' do
-    erb :about, {locals: {message: @message}}
+    redirect('/#services')
+    # erb :about, {locals: {message: @message}}
   end
 
   get '/services' do
@@ -40,7 +41,8 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/contact' do
-    erb :contact, {locals: {message: @message}}
+    redirect('/#contact')
+    # erb :contact, {locals: {message: @message}}
   end
 
 end

@@ -121,7 +121,6 @@ p {
 .watermark-white {
   position: absolute;
   right: 0;
-  top: 100px;
   height: 100%;
 }
 .watermark-white img {
