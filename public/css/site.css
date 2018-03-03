@@ -144,8 +144,7 @@ p {
 .video-container {
     position: absolute;
     width: 100%;
-    height: 100vh;
-    min-height: 500px;
+    height: 900px;
     padding: 20px;
     border-radius: 0px;
     background-attachment: scroll;
@@ -162,7 +161,7 @@ p {
     opacity: 0.5;
 }
 .barrier {
-  min-height: 100vh;
+  min-height: 900px;
 }
 
 .dash {
