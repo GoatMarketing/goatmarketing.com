@@ -183,7 +183,8 @@ p {
 .profile-pic img {
   width: 100%;
   height: 100%;
-  border-radius: 15px;
+  border-radius: 50%;
+  border: 6px solid white;
 }
 
 /* Content */
