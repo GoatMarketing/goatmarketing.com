@@ -35,6 +35,11 @@ class ApplicationController < Sinatra::Base
     # erb :brands, {locals: {message: @message}}
   end
 
+  get '/team' do
+    redirect('/#team')
+    # erb :team, {locals: {message: @message}}
+  end
+
   get '/creators' do
     redirect('/#creators')
     # erb :creators, {locals: {message: @message}}
