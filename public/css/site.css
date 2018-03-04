@@ -235,8 +235,9 @@ form .text-box {
   outline: none;
   width: 300px;
   font-weight: 200;
-  font-size: 1.5em;
-  color: var(--teal);
+  font-size: 1em;
+  padding: 10px;
+  color: var(--black);
   background-color: white;
   /*border: 2px solid transparent !important;*/
   transition: all 0.5s ease;
@@ -273,6 +274,10 @@ input[type="search"] {
 input[type="search"]:focus {
   outline: none;
   border: 1px solid cyan;
+}
+form textarea {
+  height: 150px;
+  color: var(--black);
 }
 /* Banner Messages */
 .banner-message {
