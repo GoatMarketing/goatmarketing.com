@@ -4,6 +4,7 @@ require 'bundler'
 require 'sinatra/activerecord'
 require './config/environments' #database configuration
 require 'erb'
+require 'pony'
 require 'httparty'
 require 'pp'
 require 'json'

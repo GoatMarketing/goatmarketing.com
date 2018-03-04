@@ -60,7 +60,7 @@
   <body>
     <% if @message != nil %>
       <style media="screen">.navbar{margin-top: 45px;}.m-nav-container{margin-top: 72px;}</style>
-      <div class="banner-message"><a href="/alerts"><%= @message %></a></div>
+      <div class="banner-message"><%= @message %></div>
     <% end %>
     <%= erb :'layouts/nav' %>
     <%= yield %>

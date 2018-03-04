@@ -5,6 +5,7 @@ gem "sinatra-activerecord"
 gem 'sinatra-contrib'
 gem "pg"
 # gem 'thin'
+gem 'pony'
 gem 'httparty'
 gem 'dotenv'
 gem 'i18n'
