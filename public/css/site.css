@@ -117,16 +117,16 @@ p {
   background: linear-gradient(to bottom right, var(--dark-blue), var(--light-blue)); /* Standard syntax */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--dark-blue), endColorstr=var(--light-blue),GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
-
 .watermark-white {
-  position: absolute;
+  position: relative;
   right: 0;
-  height: 100%;
 }
 .watermark-white img {
-  height: 500px;
+  position: absolute;
+  margin-top: -150px;
+  height: 800px;
   opacity: 0.5;
-  padding-right: 125px;
+  right: 50px;
 }
 
 .hero-text {
