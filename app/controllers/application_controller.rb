@@ -81,7 +81,7 @@ class ApplicationController < Sinatra::Base
         :password             => ENV['SENDGRID_PASSWORD'],
         :authentication       => :plain,
         :enable_starttls_auto => true,
-        :domain               => 'ENV['SENDGRID_DOMAIN']'
+        :domain               => ENV['SENDGRID_DOMAIN']
       }
     }
   end
