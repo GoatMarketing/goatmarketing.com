@@ -35,4 +35,24 @@ $( document ).ready(function() {
       if(px) $(this).addClass("animation-slide-in");
   });
 
+  // Modals
+  // Close Modals
+  $('.close-modal').click(function(){
+    $('#creators-modal, #brands-modal').fadeOut();
+    $('.body-modal-overlay').fadeOut();
+    $('body').css("overflow","auto");
+  })
+  // Open Creator Modal
+  $('#creator-modal-btn').click(function(){
+    $('#creators-modal').fadeIn();
+    $('.body-modal-overlay').fadeIn();
+    $('body').css("overflow","hidden");
+  })
+  // Open Brand Modal
+  $('#brand-modal-btn').click(function(){
+    $('#brands-modal').fadeIn();
+    $('.body-modal-overlay').fadeIn();
+    $('body').css("overflow","hidden");
+  })
+
 });
