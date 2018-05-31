@@ -67,7 +67,51 @@ class ApplicationController < Sinatra::Base
       redirect '/success'
     rescue
       @exception = $!
-      erb :boom
+      erb :error
+    end
+  end
+
+  post '/brands' do
+    configure_pony
+    full_name = [:full_name]
+    email_address = [:email_address]
+    company = params[:company]
+    message = [:message]
+    logger.error params.inspect
+    begin
+      Pony.mail(
+        :from => "#{full_name}<#{sender_email}>",
+        :to => 'contact@goatmarketing.com',
+        :subject =>"#{full_name} has contacted you from GOAT website",
+        :body => "#{message}",
+      )
+      redirect '/success'
+    rescue
+      @exception = $!
+      erb :error
+    end
+  end
+
+  post '/creators' do
+    configure_pony
+    full_name = [:full_name]
+    email_address = [:email_address]
+    message = params[:message]
+    instagram = [:instagram]
+    twitter = [:twitter]
+    youtube = [:youtube]
+    logger.error params.inspect
+    begin
+      Pony.mail(
+        :from => "#{full_name}<#{sender_email}>",
+        :to => 'contact@goatmarketing.com',
+        :subject =>"#{full_name} has contacted you from GOAT website",
+        :body => "#{message}",
+      )
+      redirect '/success'
+    rescue
+      @exception = $!
+      erb :error
     end
   end
 
