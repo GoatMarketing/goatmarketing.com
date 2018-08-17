@@ -17,7 +17,10 @@
 }
 .close-modal {
   cursor: pointer;
-  margin-left: -100%;
+  width: 0px;
+}
+.modal-title {
+  margin-top: -20px;
 }
 .body-modal-overlay {
   z-index: 50;
