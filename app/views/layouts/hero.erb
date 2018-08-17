@@ -18,7 +18,19 @@
     <div class="col-3"></div>
     <%= erb :'layouts/stats' %>
   </div>
-  <div class="overlay"></div>
+  <div id="hero-video-container" class="overlay"></div>
   <video id='hero-video' src="/videos/goat-marketing-creators-hero.mp4" autoplay loop></video>
 </div>
 <div class="barrier"></div>
+
+<script type="text/javascript">
+  // Auto Play Video on Page Load
+  var videoStep = document.getElementById("hero-video-container");
+  var video = document.getElementById("hero-video");
+  videoStep.addEventListener("impress:stepenter", function() {
+      video.play();
+  }, false);
+  videoStep.addEventListener("impress:stepleave", function() {
+      video.pause();
+  }, false);
+</script>
